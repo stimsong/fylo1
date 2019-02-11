@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Test save for GitHub -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> 
+
+  <title>Frontend Mentor | Beta sign up split layout Challenge</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-family: 'Open Sans', serif;
+      font-size: 100%;
+      background-color: #ffffff;
+      margin: 0;
+    }
+    p:empty {
+      height: 5px;
+      width: auto;
+    }
+    #container {
+      display: flex;
+      flex-direction: column;
+      background-image: url(images/bg-intro.svg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    aside img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      margin-bottom: 50px;
+      width: 200px;
+      max-height: 300px;
+    }
+    main {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5em;
+    }
+    h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1em;
+    }
+    .signup_button {
+      background-color: hsl(163, 95%, 43%);
+      border: none;
+      border-radius: 2px;
+      color: white;
+      padding: 7px 34px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 10px 2px 0px;
+      cursor: pointer;
+    }
+    p {
+      font-size: .8em;
+      color: hsl(0, 0%, 50%);
+    }
+    .priv_pol {
+      font-size: .7em;
+    }
+    footer {
+      margin-top: 25px;
+    }
+    /* @media screen and (min-width: 375px) { */
+      header {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+      }
+      nav {
+        justify-content: center;
+        margin: 10px;
+        padding: 15px;
+        flex-wrap: nowrap;
+      }
+      nav img#logo {
+        padding-top: 5px;
+        padding-right: 100px;
+        height: 25px;
+      }
+      nav img#social {
+        height: 15px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+      }
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+
+<body>
+  <div id="container">
+    <header>
+      <nav>
+        <img src="images/logo-white.svg" id="logo" alt="Fylo logo">
+        <img src="images/twitter-brands-white.svg" id="social" alt="">
+        <img src="images/06-facebook_104498-white.svg" id="social" alt="">
+        <img src="images/mail-24_103176-white.svg" id="social" alt="">
+      </nav>
+    </header>
+
+    <aside>
+        <img src="images/illustration-main.svg" alt="Image of man holding a key">
+        <!-- <img src="images/bg-intro.svg"> -->
+    </aside>
+    
+    <p></p>
+  </div>
+
+  <main>
+    <h1>All your files in one secure location, accessible anywhere.</h1>
+
+    <p>Fylo stores all your most important files in one secure location.
+    Access them wherever you need, share and collaborate with friends,
+    family and co-workers.</p>
+    
+    <h2>Sign up for early access</h2>
+
+    <p>
+      <form>
+        <input type="text" size="45">
+        <br>
+        <input type="submit" class="signup_button" value="Sign Up">
+      </form>
+    </p>
+      
+    <p align=right><a class="priv_pol" href="">Privacy Policy</a></p>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
+    </p>
+  </footer>
+</body>
+</html>
