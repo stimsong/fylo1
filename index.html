@@ -18,7 +18,7 @@
       background-color: #ffffff;
       margin: 0;
     }
-    #container {     /* contains header/nav, aside, p:empty */
+    #container {     /* contains header/nav, aside, p:empty for mobile device */
       display: flex;
       flex-direction: column;
       background-image: url(images/bg-intro.svg);
@@ -47,7 +47,8 @@
       padding-right: 10px;
       padding-bottom: 5px;
     }
-    aside img {
+    aside img {   
+      /* used "max-height:300px" to keep image from growing lower than the background when browser re-sized */
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -85,7 +86,8 @@
       font-size: .8em;
       color: hsl(0, 0%, 50%);
     }
-    p:empty {   /* Added as a 3rd box for flex, to add space for background to cover */
+    p:empty {   
+      /* Added as a 3rd box for flex, to add space for background to cover */
       height: 5px;
       width: auto;
     }
@@ -95,8 +97,34 @@
     footer {
       margin-top: 25px;
     }
-    @media screen and (min-width: 1440px) {
-
+    @media screen and (min-width: 960px) {
+      #container {
+        flex-direction: initial;
+        display: initial;
+        background-image: initial;
+        background-size: initial;
+        background-repeat: initial;
+      }
+      body{
+        display: flex;
+      }
+      nav img#social {
+        fill:black;
+      }
+      aside {
+        float: left;
+        background-image: url(images/bg-intro.svg);
+      }
+      aside img {
+        max-height: initial;
+        width: 100%;
+      }
+      header {
+        float: right;
+      }
+      main {
+        float: right;
+      }
     }
 
     .attribution { font-size: 11px; text-align: center; }
@@ -141,12 +169,16 @@
     </p>
       
     <p align=right><a class="priv_pol" href="">Privacy Policy</a></p>
+
+    <p class="attribution">
+      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
+    </p>
   </main>
 
-  <footer>
+<!--   <footer>
     <p class="attribution">
       This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
     </p>
   </footer>
-</body>
+ --></body>
 </html>
