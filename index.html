@@ -19,13 +19,22 @@
       margin: 0;
     }
     #container {     /* contains header/nav, aside, p:empty for mobile device */
+      /* position: relative; */
       display: flex;
       flex-direction: column;
       background-image: url(images/bg-intro.svg);
       background-size: 100% 100%;
       background-repeat: no-repeat;
     }
+    #intro_background {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
     header {
+      position: absolute;
+      top: 2%;
+      /* z-index: 100; */
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -49,6 +58,9 @@
     }
     aside img {   
       /* used "max-height:300px" to keep image from growing lower than the background when browser re-sized */
+      z-index: 100;
+      position: absolute;
+      top: 5%;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -108,9 +120,6 @@
       body{
         display: flex;
       }
-      nav img#social {
-        fill:black;
-      }
       aside {
         float: left;
         background-image: url(images/bg-intro.svg);
@@ -134,22 +143,26 @@
 
 
 <body>
-  <div id="container">
-    <header>
-      <nav>
-        <img src="images/logo-white.svg" id="logo" alt="Fylo logo">
-        <img src="images/twitter-brands-white.svg" id="social" alt="">
-        <img src="images/06-facebook_104498-white.svg" id="social" alt="">
-        <img src="images/mail-24_103176-white.svg" id="social" alt="">
-      </nav>
-    </header>
-
+  <!-- <div id="container"> -->
     <aside>
         <img src="images/illustration-main.svg" alt="Image of man holding a key">
     </aside>
     
     <p></p>
+  <!-- </div> -->
+
+  <div id="intro_background">
+    <img src="images/bg-intro.svg">
   </div>
+
+  <header>
+    <nav>
+      <img src="images/logo-white.svg" id="logo" alt="Fylo logo">
+      <img src="images/twitter-brands-white.svg" id="social" alt="">
+      <img src="images/06-facebook_104498-white.svg" id="social" alt="">
+      <img src="images/mail-24_103176-white.svg" id="social" alt="">
+    </nav>
+  </header>
 
   <main>
     <h1>All your files in one secure location, accessible anywhere.</h1>
