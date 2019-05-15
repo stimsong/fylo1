@@ -94,8 +94,9 @@
     }
 
     #signup-input {
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-      padding: 7px 50px;
+      width: 90%;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+      padding: 7px;
       border-width: 0;
       border-color: #f1f1f1;
       border-radius: 2px;
@@ -104,7 +105,7 @@
 
     #signup_button {
       background-color: hsl(163, 95%, 43%);
-      box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+      box-shadow: 0 0 2px rgba(0, 0, 0, .4);
       border: none;
       border-radius: 2px;
       color: white;
@@ -116,6 +117,12 @@
       margin: 15px 2px 0;
       cursor: pointer;
     }
+
+    input[type=submit]:hover, input[type=submit]:focus {
+      transform: scale(1.2);
+      transition: transform 0.1s linear;
+    }
+
       /*     .signup_button {
       background-color: hsl(163, 95%, 43%);
       border: none;
@@ -226,7 +233,8 @@
         padding: 6% 10% 0;
       }
       #signup-input {
-        padding: 15px 50px;
+        width: 60%;
+        padding: 15px;
         border-width: .1px;
         border-color: #f1f1f1;
         border-radius: 4px;
@@ -309,7 +317,7 @@
 
       <p>
         <form>
-          <input type="text" id="signup-input">
+          <input type="email" id="signup-input">
           <!-- <br> -->
           <input type="submit" id="signup_button" value="Sign Up">
         </form>
