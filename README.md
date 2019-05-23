@@ -1,5 +1,5 @@
 # fylo1
-Project: Frontend Mentor - Beta sign up split layout
+Project: Beta sign up split layout
 
 This is a single page sign up site developed using HTML and CSS. It is a responsive design with mobile and desktop layouts. 
 
